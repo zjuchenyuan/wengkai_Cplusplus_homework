@@ -1,0 +1,34 @@
+# Project: Homwork1
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o Record.o Students.o
+LINKOBJ  = main.o Record.o Students.o
+LIBS     = -L"C:/MinGW/lib" -L"C:/MinGW/mingw32/lib" -static-libgcc
+INCS     = -I"C:/MinGW/include" -I"C:/MinGW/lib/gcc/mingw32/3.4.5/include"
+CXXINCS  = -I"C:/MinGW/include" -I"C:/MinGW/lib/gcc/mingw32/3.4.5/include"
+BIN      = Homework1.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+Record.o: Record.cpp
+	$(CPP) -c Record.cpp -o Record.o $(CXXFLAGS)
+
+Students.o: Students.cpp
+	$(CPP) -c Students.cpp -o Students.o $(CXXFLAGS)
