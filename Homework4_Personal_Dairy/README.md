@@ -32,13 +32,18 @@ Diary.h 提供Diary这个类，公开以下接口：
 
 ```
 static int today(); //返回今天的日期，返回类型int，如20161210
+
 Dairy(string filename); //构造函数，需要传入一个存储的文件名，如"data.txt"，文件可以不存在
+
 virtual ~Dairy(); //析构函数，将数据写入到同一个文件
+
 void pdadd(int date,string& content); //传入日期与日记内容，在内存中存储之
+
 void pdlist(int begin=0,int end=99999999,bool friendly=true); //显示从begin到end之间所有的日记，如果传入friendly=False则按照和文件存储方式同样的形式输出（析构函数无法写入文件时会这样调用以防止数据丢失）
+
 string pdshow(int date=today());//显示给定日期的日记
+
 int pdremove(int date);//删除给定日期的日记
-}
 ```
 
 使用这个类的有4个cpp文件，都是这个类的简单调用来完成用户交互
