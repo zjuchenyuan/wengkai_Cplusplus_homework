@@ -72,6 +72,6 @@ mv data.txt.bak data.txt
 
 Here is the screenshot of these test code:
 
-![1](1.jpg)
+![1](screen1.jpg)
 
-![2](2.jpg)
+![2](screen2.jpg)
