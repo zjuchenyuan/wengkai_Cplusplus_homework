@@ -16,11 +16,11 @@ int main(int argc,char* argv[]){
         int date;
         tmp<<argv[1];
         tmp>>date;
-        cout<<a.pdshow(date)<<endl;
+        return a.pdshow(date);
     }else if(argc==1) {
-        cout<<a.pdshow()<<endl;
+        return a.pdshow();
     }else{
-        cout<<"Usage example: pdshow "<<Dairy::today();
+        cout<<"Usage example: pdshow "<<Dairy::today()<<endl;
     }
     return 0;
 }
