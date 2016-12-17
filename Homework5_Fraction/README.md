@@ -84,22 +84,22 @@ public:
 
     const Fraction operator/(const Fraction& that) const
     
-这一句中第一个const 表示除法返回的运算值不能做左值
+    这一句中第一个const 表示除法返回的运算值不能做左值
 
-第二个const 表示我这个除法函数不会对第二个参数做修改
+    第二个const 表示我这个除法函数不会对第二个参数做修改
 
-第三个const 表示我这个函数对自己也不会修改
+    第三个const 表示我这个函数对自己也不会修改
 
 3. inserter 的函数，怎么把 3/15 中间的/干掉？
 
-查阅cin的用法，发现有个get()方法可以从输入流得到一个字符
+    查阅cin的用法，发现有个get()方法可以从输入流得到一个字符
 
-所以用is.get()就干掉了中间的/咯~
+    所以用is.get()就干掉了中间的/咯~
 
 4. 要重载>>与<<，是不能写成类的成员函数的
 
-因为操作对象是istream和ostream，并不是我们写的类
+    因为操作对象是istream和ostream，并不是我们写的类
 
-要在全局中写一个`ostream& operator<<(ostream& os,const Fraction& obj)`
+    要在全局中写一个`ostream& operator<<(ostream& os,const Fraction& obj)`
 
-并且在类的定义中把这个函数声明加个friend
+    并且在类的定义中把这个函数声明加个friend
