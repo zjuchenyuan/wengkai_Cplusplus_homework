@@ -103,3 +103,7 @@ public:
     要在全局中写一个`ostream& operator<<(ostream& os,const Fraction& obj)`
 
     并且在类的定义中把这个函数声明加个friend
+
+5. toString的实现
+
+    当然是用sstream咯，这个我在[notebook](https://github.com/zjuchenyuan/notebook/blob/master/C.md#c用sstream代替sprintf)中写道啦~
