@@ -1,5 +1,5 @@
 [Project]
-FileName=Homework5.dev
+FileName=Homework6.dev
 Name=Homwork6
 Type=1
 Ver=2
@@ -19,7 +19,7 @@ ObjectOutput=
 LogOutput=
 LogOutputEnabled=0
 OverrideOutput=0
-OverrideOutputName=Homework5.exe
+OverrideOutputName=Homework6.exe
 HostApplication=
 UseCustomMakefile=0
 CustomMakefile=
