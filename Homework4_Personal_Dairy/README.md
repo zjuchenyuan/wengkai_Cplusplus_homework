@@ -1,7 +1,7 @@
 # Homework4 Personal Dairy
 
 
-#题目描述 Description
+## 题目描述 Description
 
 The Personal Diary is a CLI (Command Line Interface) software, consists of three programs:
 
@@ -26,7 +26,7 @@ Common classes and functions should be shared between programs. No interactive i
 
 ====
 
-#类的说明 Class Description
+## 类的说明 Class Description
 
 Diary.h 提供Diary这个类，公开以下接口：
 
